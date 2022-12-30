@@ -1,0 +1,7 @@
+git@github.com:go-masonry/mortar
+git@github.com:go-masonry/mortar-template
+git@github.com:go-masonry/mortar-demo
+git@github.com:go-masonry/bzerolog
+git@github.com:go-masonry/bprometheus
+git@github.com:go-masonry/bjaeger
+git@github.com:go-masonry/bviper
