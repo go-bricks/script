@@ -19,16 +19,15 @@ for folder in ../*; do
       git add .
       git commit -m "Initial commit"
 
-      # extract folder name
-      folder_name=$(basename "$folder")
-
-      gh repo create github.com/${ORGANIZATION}/"$folder_name" --source=. --public 2> /dev/null
-
       #git remote add origin https://github.com/${ORGANIZATION}/"$folder_name".git
 
     else
       echo "Git repo already initialized in $folder"
     fi
+    # extract folder name
+    folder_name=$(basename "$folder")
+
+    gh repo create github.com/${ORGANIZATION}/"$folder_name" --source=. --public 2> /dev/null
   else
     echo "Skipping $folder"
   fi
